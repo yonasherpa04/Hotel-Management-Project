@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hotel Management System</title>
+    <link rel="stylesheet" href="Hotel-Management-Project.css">
+</head>
+<body>
+    <header>
+        <h1>Welcome to Our Hotel</h1>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#rooms">Rooms</a></li>
+                <li><a href="#bookings">Bookings</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li id="loginLogoutLink"><a href="#login">Login</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="home" class="active-section">
+            <h2>Experience Luxury Stays</h2>
+            <p>Your comfort is our priority. Book your perfect room today!</p>
+            <button id="viewRoomsBtn">View Available Rooms</button>
+        </section>
+
+        <section id="rooms">
+            <h2>Available Rooms</h2>
+            <div id="roomList" class="room-grid">
+                <p>Loading rooms...</p>
+            </div>
+        </section>
+
+        <section id="bookings">
+            <h2>Your Bookings</h2>
+            <div id="bookingList">
+                <p>Please log in to view your bookings.</p>
+            </div>
+            <button id="createNewBookingBtn" style="display:none;">Create New Booking</button>
+            <div id="bookingForm" style="display:none;">
+                <h3>New Booking</h3>
+                <form id="bookingSubmissionForm">
+                    <label for="roomType">Room Type:</label>
+                    <select id="roomType" name="roomType" required>
+                        <option value="">Select a room type</option>
+                        </select><br><br>
+
+                    <label for="checkInDate">Check-in Date:</label>
+                    <input type="date" id="checkInDate" name="checkInDate" required><br><br>
+
+                    <label for="checkOutDate">Check-out Date:</label>
+                    <input type="date" id="checkOutDate" name="checkOutDate" required><br><br>
+
+                    <button type="submit">Confirm Booking</button>
+                </form>
+            </div>
+        </section>
+
+        <section id="login">
+            <h2>Login</h2>
+            <form id="loginForm">
+                <label for="username">Username:</label>
+                <input type="text" id="username" name="username" required><br><br>
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" required><br><br>
+                <button type="submit">Login</button>
+            </form>
+            <p id="loginMessage" style="color: red;"></p>
+        </section>
+
+        <section id="contact">
+            <h2>Contact Us</h2>
+            <p>Have questions? Reach out to us at info@hotel.com or call +1234567890.</p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Hotel Management. All rights reserved.</p>
+    </footer>
+
+    <script src="Hotel-Management-Project.js"></script>
+    <script src="Hotel-Management-Project.js"></script>
+    <script src="Hotel-Management-Project.js"></script>
+</body>
+</html>
